@@ -16,16 +16,12 @@ jobs:
     - name: Use Node.js
       uses: actions/setup-node@v2
     - run: npm run build
-    - name: GitHub Push
-      uses: ad-m/github-push-action@v0.6.0
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@4.1.4
       with:
-        # Token for the repo. Can be passed in using $\{{ secrets.GITHUB_TOKEN }}
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        # Repository name to push. Default or empty value represents current github repository (${GITHUB_REPOSITORY})
-        repository: milkiq/milkiq.github.io
-        # Destination branch to push changes
         branch: pages
-        # Determines if force push is used
-        force: true
-        # Directory to change to before pushing.
-        directory: public
+        # The folder in your repository that you want to deploy. If your build script compiles into a directory named build you would put it here. Folder paths cannot have a leading / or ./. If you wish to deploy the root directory you can place a . here.
+        folder: public
+        # Allows you to speicfy a different repository path so long as you have permissions to push to it. This should be formatted like so: JamesIves/github-pages-deploy-action
+        repository-name: milkiq/milkiq.github.io
+
