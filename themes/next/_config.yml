@@ -159,10 +159,10 @@ social:
   #YouTube: https://youtube.com/yourname || fab fa-youtube
   #Instagram: https://instagram.com/yourname || fab fa-instagram
   #Skype: skype:yourname?call|chat || fab fa-skype
-  GitHub: https://github.com/milkiq
-  E-Mail: mailto:milkiq@163.com
-  Weibo: https://weibo.com/tudouxiaowangzhi
-  掘金: https://juejin.cn/user/1714893871933630
+  GitHub: https://github.com/milkiq || fab fa-github
+  E-Mail: mailto:milkiq@163.com || fa fa-envelope
+  微博: https://weibo.com/tudouxiaowangzhi || fab fa-weibo
+  掘金: https://juejin.cn/user/1714893871933630 || fa fa-globe
 
 social_icons:
   enable: true
@@ -178,6 +178,7 @@ links_settings:
 
 links:
   #Title: https://example.com
+  thornshell's blog: https://www.overpack.io/
 
 # Table of Contents in the Sidebar
 # Front-matter variable (unsupport wrap expand_all).
@@ -368,7 +369,7 @@ codeblock:
   # Code Highlight theme
   # All available themes: https://theme-next.js.org/highlight/
   theme:
-    light: default
+    light: tomorrow-night-eighties
     dark: tomorrow-night
   prism:
     light: prism
