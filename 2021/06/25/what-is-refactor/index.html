@@ -20,16 +20,16 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"github.com","root":"/","images":"/images","scheme":"Mist","version":"8.5.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"order":-2}},"activeClass":"gitalk"},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
-<meta name="description" content="在下温吞，一个默默建设社会主义的、熊熊燃烧着的青年。  本文是在读《重构：改善既有代码的设计》一书的第二章时趁热写下的，结合了自己的思考与理解。 如有错漏，还望不吝批评指正。  对于重构一词，很多人对它还停留在模糊的概念上，会把这些场景认为是重构： “这代码实在是太丑了，我有更好看的写法，我想改掉它” “性能不好，我得改造改造这里” 甚至是 “这技术栈有问题吧，我重新实现一下这个项目吧” 这未免">
+<meta name="description" content="本文是在读《重构：改善既有代码的设计》一书的第二章时趁热写下的，结合了自己的思考与理解。 如有错漏，还望不吝批评指正。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="当提起代码重构时，我们究竟要做什么？">
 <meta property="og:url" content="http://github.com/milkiq/2021/06/25/what-is-refactor/index.html">
-<meta property="og:site_name" content="一大碗温吞水">
-<meta property="og:description" content="在下温吞，一个默默建设社会主义的、熊熊燃烧着的青年。  本文是在读《重构：改善既有代码的设计》一书的第二章时趁热写下的，结合了自己的思考与理解。 如有错漏，还望不吝批评指正。  对于重构一词，很多人对它还停留在模糊的概念上，会把这些场景认为是重构： “这代码实在是太丑了，我有更好看的写法，我想改掉它” “性能不好，我得改造改造这里” 甚至是 “这技术栈有问题吧，我重新实现一下这个项目吧” 这未免">
+<meta property="og:site_name" content="温吞 Blog">
+<meta property="og:description" content="本文是在读《重构：改善既有代码的设计》一书的第二章时趁热写下的，结合了自己的思考与理解。 如有错漏，还望不吝批评指正。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1f97875098e64a64a25f3dd66384c37b~tplv-k3u1fbpfcp-watermark.image">
 <meta property="article:published_time" content="2021-06-25T10:40:27.000Z">
-<meta property="article:modified_time" content="2021-06-25T03:36:32.645Z">
+<meta property="article:modified_time" content="2021-06-25T04:09:53.244Z">
 <meta property="article:author" content="温吞">
 <meta property="article:tag" content="软件工程">
 <meta property="article:tag" content="学习笔记">
@@ -44,7 +44,7 @@
 <script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://github.com/milkiq/2021/06/25/what-is-refactor/","path":"2021/06/25/what-is-refactor/","title":"当提起代码重构时，我们究竟要做什么？"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>当提起代码重构时，我们究竟要做什么？ | 一大碗温吞水</title>
+<title>当提起代码重构时，我们究竟要做什么？ | 温吞 Blog</title>
   
 
 
@@ -73,9 +73,10 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">一大碗温吞水</h1>
+      <h1 class="site-title">温吞 Blog</h1>
       <i class="logo-line"></i>
     </a>
+      <p class="site-subtitle" itemprop="description">一大碗温吞水</p>
   </div>
 
   <div class="site-nav-right">
@@ -133,7 +134,7 @@
     <img class="site-author-image" itemprop="image" alt="温吞"
       src="/images/avatar.jpg">
   <p class="site-author-name" itemprop="name">温吞</p>
-  <div class="site-description" itemprop="description">愿世界人民大团结。</div>
+  <div class="site-description" itemprop="description">世界人民大团结万岁。</div>
 </div>
 <div class="site-state-wrap site-overview-item animated">
   <nav class="site-state">
@@ -160,20 +161,30 @@
 </div>
   <div class="links-of-author site-overview-item animated">
       <span class="links-of-author-item">
-        <a href="https://github.com/milkiq" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;milkiq">GitHub</a>
+        <a href="https://github.com/milkiq" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;milkiq"><i class="fab fa-github fa-fw"></i>GitHub</a>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:milkiq@163.com" title="E-Mail → mailto:milkiq@163.com" rel="noopener" target="_blank">E-Mail</a>
+        <a href="mailto:milkiq@163.com" title="E-Mail → mailto:milkiq@163.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
       </span>
       <span class="links-of-author-item">
-        <a href="https://weibo.com/tudouxiaowangzhi" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;tudouxiaowangzhi" rel="noopener" target="_blank">Weibo</a>
+        <a href="https://weibo.com/tudouxiaowangzhi" title="微博 → https:&#x2F;&#x2F;weibo.com&#x2F;tudouxiaowangzhi" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i>微博</a>
       </span>
       <span class="links-of-author-item">
-        <a href="https://juejin.cn/user/1714893871933630" title="掘金 → https:&#x2F;&#x2F;juejin.cn&#x2F;user&#x2F;1714893871933630" rel="noopener" target="_blank">掘金</a>
+        <a href="https://juejin.cn/user/1714893871933630" title="掘金 → https:&#x2F;&#x2F;juejin.cn&#x2F;user&#x2F;1714893871933630" rel="noopener" target="_blank"><i class="fa fa-globe fa-fw"></i>掘金</a>
       </span>
   </div>
 
 
+  <div class="links-of-blogroll site-overview-item animated">
+    <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://www.overpack.io/" title="https:&#x2F;&#x2F;www.overpack.io&#x2F;" rel="noopener" target="_blank">thornshell's blog</a>
+        </li>
+    </ul>
+  </div>
 
           </div>
         </div>
@@ -211,11 +222,11 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
       <meta itemprop="name" content="温吞">
-      <meta itemprop="description" content="愿世界人民大团结。">
+      <meta itemprop="description" content="世界人民大团结万岁。">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="一大碗温吞水">
+      <meta itemprop="name" content="温吞 Blog">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -231,7 +242,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2021-06-25 10:40:27 / 修改时间：03:36:32" itemprop="dateCreated datePublished" datetime="2021-06-25T10:40:27+00:00">2021-06-25</time>
+      <time title="创建时间：2021-06-25 10:40:27 / 修改时间：04:09:53" itemprop="dateCreated datePublished" datetime="2021-06-25T10:40:27+00:00">2021-06-25</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -254,11 +265,11 @@
     
     <div class="post-body" itemprop="articleBody">
         <blockquote>
-<p><em><strong>在下温吞，一个默默建设社会主义的、熊熊燃烧着的青年。</strong></em></p>
-<hr>
 <p>本文是在读《重构：改善既有代码的设计》一书的第二章时趁热写下的，结合了自己的思考与理解。</p>
 <p>如有错漏，还望不吝批评指正。</p>
 </blockquote>
+<span id="more"></span>
+
 <p>对于<strong>重构</strong>一词，很多人对它还停留在模糊的概念上，会把这些场景认为是重构：</p>
 <p><code>“这代码实在是太丑了，我有更好看的写法，我想改掉它”</code> <code>“性能不好，我得改造改造这里”</code></p>
 <p>甚至是 <code>“这技术栈有问题吧，我重新实现一下这个项目吧”</code></p>
