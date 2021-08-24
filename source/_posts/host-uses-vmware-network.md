@@ -17,7 +17,7 @@ categories: 网络
 
 打开 VMware 中虚拟机的设置。
 
-![image2021-4-2_10-20-54](host-uses-vmware-network/image2021-4-2_10-20-54.png)
+{% asset_img image2021-4-2_10-20-54.png home %}
 
 除了上图的 NAT 网络外，添加一个新的网络适配器，选择”仅主机模式“。
 
@@ -35,11 +35,11 @@ categories: 网络
 
 > 查看这个以太网连接的属性中 Internet 协议版本 4 （TCP/IPV4）属性应该使用了一个 10.xxx.xx.xx 的内网 IP 。
 >
-> ![2222222](host-uses-vmware-network/2222222.png)
+> {% asset_img  2222222.png  home %}
 >
 > 点击高级，查看DNS的设置，记住这些配置，接下来设置宿主机时要用到。
 >
-> ![333333](host-uses-vmware-network/333333.png)
+> {% asset_img  333333.png  home %}
 
 查看此以太网的属性，点击共享选项卡，勾选”允许其他网络用户通过此计算机的 Internet 连接来连接“，并将下方的选择共享的网络连接，选为虚拟网络适配器中的”仅主机模式“的网络适配器。
 
