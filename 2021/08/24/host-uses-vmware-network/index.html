@@ -20,28 +20,34 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"github.com","root":"/","images":"/images","scheme":"Mist","version":"8.5.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"order":-2}},"activeClass":"gitalk"},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
-<meta name="description" content="这是Hexo自己生成的文章，也是我这个博客里出现的的第一篇文章。因为具有一定的纪念意义不太舍得删掉2333">
+<meta name="description" content="本人的宿主机为 windows10，虚拟机为 VMware 启动的 windows10。 在使用 VPN 时必须安装除 VPN 外的一个软件，但因为”软件洁癖“，不想在宿主机安装这些软件，所以在虚拟机中安装 VPN 相关软件，在宿主机使用虚拟机共享出来的网络上网。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello, Blog">
-<meta property="og:url" content="http://github.com/milkiq/2018/01/23/hello-Blog/index.html">
+<meta property="og:title" content="宿主机使用虚拟机的VPN网络上网">
+<meta property="og:url" content="http://github.com/milkiq/2021/08/24/host-uses-vmware-network/index.html">
 <meta property="og:site_name" content="温吞 Blog">
-<meta property="og:description" content="这是Hexo自己生成的文章，也是我这个博客里出现的的第一篇文章。因为具有一定的纪念意义不太舍得删掉2333">
+<meta property="og:description" content="本人的宿主机为 windows10，虚拟机为 VMware 启动的 windows10。 在使用 VPN 时必须安装除 VPN 外的一个软件，但因为”软件洁癖“，不想在宿主机安装这些软件，所以在虚拟机中安装 VPN 相关软件，在宿主机使用虚拟机共享出来的网络上网。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2018-01-23T20:35:03.000Z">
+<meta property="og:image" content="http://github.com/milkiq/2021/08/24/host-uses-vmware-network/host-uses-vmware-network/image2021-4-2_10-20-54.png">
+<meta property="og:image" content="http://github.com/milkiq/2021/08/24/host-uses-vmware-network/host-uses-vmware-network/2222222.png">
+<meta property="og:image" content="http://github.com/milkiq/2021/08/24/host-uses-vmware-network/host-uses-vmware-network/333333.png">
+<meta property="article:published_time" content="2021-08-24T20:27:03.000Z">
 <meta property="article:modified_time" content="2021-08-24T12:42:13.564Z">
 <meta property="article:author" content="温吞">
-<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="网络">
+<meta property="article:tag" content="虚拟机">
+<meta property="article:tag" content="windows10">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://github.com/milkiq/2021/08/24/host-uses-vmware-network/host-uses-vmware-network/image2021-4-2_10-20-54.png">
 
 
-<link rel="canonical" href="http://github.com/milkiq/2018/01/23/hello-Blog/">
+<link rel="canonical" href="http://github.com/milkiq/2021/08/24/host-uses-vmware-network/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://github.com/milkiq/2018/01/23/hello-Blog/","path":"2018/01/23/hello-Blog/","title":"Hello, Blog"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://github.com/milkiq/2021/08/24/host-uses-vmware-network/","path":"2021/08/24/host-uses-vmware-network/","title":"宿主机使用虚拟机的VPN网络上网"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Hello, Blog | 温吞 Blog</title>
+<title>宿主机使用虚拟机的VPN网络上网 | 温吞 Blog</title>
   
 
 
@@ -121,7 +127,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E8%AE%BE%E7%BD%AE%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%9A%84%E8%99%9A%E6%8B%9F%E7%BD%91%E7%BB%9C%E9%80%82%E9%85%8D%E5%99%A8"><span class="nav-number">1.</span> <span class="nav-text">一、设置虚拟机的虚拟网络适配器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%9C%A8%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%86%85%E8%AE%BE%E7%BD%AE%E5%85%B1%E4%BA%AB%E8%BF%9E%E6%8E%A5"><span class="nav-number">2.</span> <span class="nav-text">二、在虚拟机内设置共享连接</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E5%9C%A8%E5%AE%BF%E4%B8%BB%E6%9C%BA%E4%B8%AD%E4%BD%BF%E7%94%A8%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%85%B1%E4%BA%AB%E7%9A%84%E7%BD%91%E7%BB%9C"><span class="nav-number">3.</span> <span class="nav-text">三、在宿主机中使用虚拟机共享的网络</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%99%84%E5%BD%95-1%EF%BC%9AVMware-%E4%B8%89%E7%A7%8D%E7%BD%91%E7%BB%9C%E9%80%82%E9%85%8D%E5%99%A8%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">4.</span> <span class="nav-text">附录 1：VMware 三种网络适配器的区别</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%99%84%E5%BD%95-2%EF%BC%9AMac-%E5%A6%82%E4%BD%95%E5%81%9A%E5%88%B0%E7%B1%BB%E4%BC%BC%E7%9A%84%E9%85%8D%E7%BD%AE"><span class="nav-number">5.</span> <span class="nav-text">附录 2：Mac 如何做到类似的配置</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -217,7 +223,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://github.com/milkiq/2018/01/23/hello-Blog/">
+    <link itemprop="mainEntityOfPage" href="http://github.com/milkiq/2021/08/24/host-uses-vmware-network/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -230,7 +236,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hello, Blog
+          宿主机使用虚拟机的VPN网络上网
         </h1>
 
         <div class="post-meta-container">
@@ -240,23 +246,17 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
+      
 
-      <time title="创建时间：2018-01-23 20:35:03" itemprop="dateCreated datePublished" datetime="2018-01-23T20:35:03+00:00">2018-01-23</time>
+      <time title="创建时间：2021-08-24 20:27:03 / 修改时间：12:42:13" itemprop="dateCreated datePublished" datetime="2021-08-24T20:27:03+00:00">2021-08-24</time>
     </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-08-24 12:42:13" itemprop="dateModified" datetime="2021-08-24T12:42:13+00:00">2021-08-24</time>
-      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
       </span>
       <span class="post-meta-item-text">分类于</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E8%B5%84%E6%96%99/" itemprop="url" rel="index"><span itemprop="name">资料</span></a>
+          <a href="/categories/%E7%BD%91%E7%BB%9C/" itemprop="url" rel="index"><span itemprop="name">网络</span></a>
         </span>
     </span>
 
@@ -270,22 +270,56 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>这是Hexo自己生成的文章，也是我这个博客里出现的的第一篇文章。因为具有一定的纪念意义不太舍得删掉2333</p>
+        <p>本人的宿主机为 windows10，虚拟机为 VMware 启动的 windows10。</p>
+<p>在使用 VPN 时必须安装除 VPN 外的一个软件，但因为”软件洁癖“，不想在宿主机安装这些软件，所以在虚拟机中安装 VPN 相关软件，在宿主机使用虚拟机共享出来的网络上网。</p>
 <span id="more"></span>
 
-<p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/deployment.html">Deployment</a></p>
+<h1 id="一、设置虚拟机的虚拟网络适配器"><a href="#一、设置虚拟机的虚拟网络适配器" class="headerlink" title="一、设置虚拟机的虚拟网络适配器"></a>一、设置虚拟机的虚拟网络适配器</h1><p>打开 VMware 中虚拟机的设置。</p>
+<p><img src="host-uses-vmware-network/image2021-4-2_10-20-54.png" alt="image2021-4-2_10-20-54"></p>
+<p>除了上图的 NAT 网络外，添加一个新的网络适配器，选择”仅主机模式“。</p>
+<p>接着，打开网络编辑器，选中”仅主机模式“的网络适配器，将DHCP功能关闭。</p>
+<ol>
+<li><blockquote>
+<p>单击编辑 &gt; 虚拟网络编辑器，并选择”仅主机模式“的网络适配器。</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>取消勾选”本地 DHCP 服务将 IP 地址分配给虚拟机“</p>
+</blockquote>
+</li>
+</ol>
+<h1 id="二、在虚拟机内设置共享连接"><a href="#二、在虚拟机内设置共享连接" class="headerlink" title="二、在虚拟机内设置共享连接"></a>二、在虚拟机内设置共享连接</h1><p>启动虚拟机，在虚拟机内一通操作，连接 VPN。</p>
+<p>随后打开”控制面板 &gt; 网络和 Internet &gt; 网络连接“，会多出来一个除之前设置的两个虚拟网络适配器外的以太网连接。</p>
+<blockquote>
+<p>查看这个以太网连接的属性中 Internet 协议版本 4 （TCP/IPV4）属性应该使用了一个 10.xxx.xx.xx 的内网 IP 。</p>
+<p><img src="host-uses-vmware-network/2222222.png" alt="2222222"></p>
+<p>点击高级，查看DNS的设置，记住这些配置，接下来设置宿主机时要用到。</p>
+<p><img src="host-uses-vmware-network/333333.png" alt="333333"></p>
+</blockquote>
+<p>查看此以太网的属性，点击共享选项卡，勾选”允许其他网络用户通过此计算机的 Internet 连接来连接“，并将下方的选择共享的网络连接，选为虚拟网络适配器中的”仅主机模式“的网络适配器。</p>
+<p>这时，再去查看”控制面板 &gt; 网络和 Internet &gt; 网络连接“中，”仅主机模式“的网络适配器属性的 Internet 协议版本 4 （TCP/IPV4）属性，应该会自动变为使用一个 192.168.137.1 的 IP。</p>
+<p>这时虚拟机内设置共享就完成了。</p>
+<h1 id="三、在宿主机中使用虚拟机共享的网络"><a href="#三、在宿主机中使用虚拟机共享的网络" class="headerlink" title="三、在宿主机中使用虚拟机共享的网络"></a>三、在宿主机中使用虚拟机共享的网络</h1><p>回到宿主机。</p>
+<p>打开”控制面板 &gt; 网络和 Internet &gt; 网络连接“，找到 VMware 创建的”仅主机使用“的虚拟网络适配器（大概会叫 VMnet1）。</p>
+<p>设置其属性的 Internet 协议版本 4 （TCP/IPV4）属性。</p>
+<p>使用的 IP 地址改为和 192.168.137.1 同网段的 IP（例如 192.168.137.2 ），这个需要自己简单计算下，网段计算规则自己查；</p>
+<p>子网掩码使用255.255.255.0；</p>
+<p>设置 DNS 则点开高级，还记得我们上个步骤说的要记住的那些配置么，完全照着那个 DNS 配置设置一遍。</p>
+<p>保存即可。</p>
+<p>到此步我们就快大功告成了，还有最后一步，我们要把宿主机中所有对内网网段的访问都路由到宿主机共享出来的网络去。</p>
+<p>因此我们在路由表中添加一条配置。</p>
+<p>使用管理员权限打开宿主机的 cmd，执行 route add 10.0.0.0 mask 255.0.0.0 192.168.137.1</p>
+<blockquote>
+<p>route 命令是操作路由表的命令</p>
+<p>route print 可以打印当前的路由表</p>
+<p>此外还有 route add、delete 之类的操作：<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Route_(%E5%91%BD%E4%BB%A4)">Route (命令) - 维基百科，自由的百科全书 (wikipedia.org)</a></p>
+</blockquote>
+<p>好了！现在我们可以在宿主机中访问内网了！</p>
+<h1 id="附录-1：VMware-三种网络适配器的区别"><a href="#附录-1：VMware-三种网络适配器的区别" class="headerlink" title="附录 1：VMware 三种网络适配器的区别"></a>附录 1：VMware 三种网络适配器的区别</h1><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/Noob_f/article/details/51099040">Vmware虚拟机三种网络模式详解_CSDN已弃用-CSDN博客</a></p>
+<p><a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1760788">VMware的几种网络模式 - 云+社区 - 腾讯云 (tencent.com)</a></p>
+<h1 id="附录-2：Mac-如何做到类似的配置"><a href="#附录-2：Mac-如何做到类似的配置" class="headerlink" title="附录 2：Mac 如何做到类似的配置"></a>附录 2：Mac 如何做到类似的配置</h1><p><a target="_blank" rel="noopener" href="http://michaelpassion.github.io/2019/02/25/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%85%B1%E4%BA%AB%E7%BD%91%E7%BB%9C%E7%BB%99%E5%AE%BF%E4%B8%BB%E6%9C%BA%E4%BD%BF%E7%94%A8/">虚拟机共享网络给宿主机使用 | Michael’s (michaelpassion.github.io)</a></p>
+<p>思路大致相同。</p>
 
     </div>
 
@@ -295,18 +329,20 @@
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/hexo/" rel="tag"># hexo</a>
+              <a href="/tags/%E7%BD%91%E7%BB%9C/" rel="tag"># 网络</a>
+              <a href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/" rel="tag"># 虚拟机</a>
+              <a href="/tags/windows10/" rel="tag"># windows10</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
+                <a href="/2021/06/29/mathematics-about-computer-science/" rel="prev" title="与计算机科学相关的数学（部分）">
+                  <i class="fa fa-chevron-left"></i> 与计算机科学相关的数学（部分）
+                </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2018/01/24/blog-first/" rel="next" title="震惊：某辣鸡少年居然拥有了Piao客，还有很多人点鸡">
-                  震惊：某辣鸡少年居然拥有了Piao客，还有很多人点鸡 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
@@ -356,7 +392,7 @@
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
 
-<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"milkiq","repo":"milkiq.github.io","client_id":"b247ab3b12d4351d6ad2","client_secret":"b3614dd23a40a7d3823c833a291f0cf2136be764","admin_user":"milkiq","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":"zh-CN","js":{"url":"https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js","integrity":"sha256-Pmj85ojLaPOWwRtlMJwmezB/Qg8BzvJp5eTzvXaYAfA="},"path_md5":"ffdc79511951a3da8fae7b11667fdef8"}</script>
+<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"milkiq","repo":"milkiq.github.io","client_id":"b247ab3b12d4351d6ad2","client_secret":"b3614dd23a40a7d3823c833a291f0cf2136be764","admin_user":"milkiq","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":"zh-CN","js":{"url":"https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js","integrity":"sha256-Pmj85ojLaPOWwRtlMJwmezB/Qg8BzvJp5eTzvXaYAfA="},"path_md5":"d6c778b51a0a8457051be965767eabe7"}</script>
 <script src="/js/third-party/comments/gitalk.js"></script>
 
 </body>
